@@ -1,6 +1,8 @@
 import { useState } from "react";
-import Menu from "./components/Menu";
+import Header from "./components/Header";
 import axios from "axios";
+import "./css/App.css";
+import Show from "./components/Show";
 
 function App() {
   const [city, setCity] = useState("");
@@ -26,7 +28,7 @@ function App() {
 
   return (
     <>
-      <Menu />
+      <Header />
       <input
         type="search"
         id="city"
@@ -35,6 +37,8 @@ function App() {
         onChange={(e) => setCity(e.target.value)}
       />
       <button onClick={weather}>Buscar</button>
+
+      <Show data={data} />
     </>
   );
 }

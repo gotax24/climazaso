@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Lexend+Giga:wght@100..900&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  color: white;
+  font-family: "Lexend Giga", serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Ibarra Real Nova", serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background: rgb(8, 94, 241);
+  background: linear-gradient(
+    0deg,
+    rgba(8, 94, 241, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}

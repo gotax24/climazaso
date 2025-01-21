@@ -1,0 +1,39 @@
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem; /* Separación del input */
+  }
+  
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Espacio entre logo y título */
+  }
+  
+  .logo {
+    width: 180px;
+    height: auto;
+  }
+  
+  .title {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Ibarra Real Nova", serif;
+    color: white;
+  }
+  
+  .header-subTitle {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .header-subTitle h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+    color: white;
+  }
+  
