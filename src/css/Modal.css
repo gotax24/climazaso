@@ -1,0 +1,66 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Fondo oscuro más opaco para mayor contraste */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: linear-gradient(
+    0deg,
+    rgba(8, 94, 241, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  ); /* Fondo acorde al tema */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  font-family: "Lexend Giga", sans-serif; /* Fuente consistente */
+  color: #ffffff; /* Texto blanco para contraste */
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(145, 14, 14); /* Botón de cierre en blanco */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.modal-close:hover {
+  transform: scale(1.2);
+}
+
+.modal-content {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

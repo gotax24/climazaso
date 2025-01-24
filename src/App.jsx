@@ -3,12 +3,17 @@ import Header from "./components/Header";
 import axios from "axios";
 import "./css/App.css";
 import Show from "./components/Show";
+import Modal from "./components/Modal";
 
 function App() {
   const [city, setCity] = useState("");
   const [data, setData] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const API_KEY = import.meta.env.VITE_API_KEY;
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   const weather = () => {
     if (!city) return;
@@ -20,6 +25,7 @@ function App() {
       .then((response) => {
         console.log(response.data);
         setData(response.data);
+        openModal();
       })
       .catch((e) => {
         console.error(e);
@@ -36,9 +42,20 @@ function App() {
         placeholder="Busca tu ciudad aqui"
         onChange={(e) => setCity(e.target.value)}
       />
-      <button onClick={weather}>Buscar</button>
+      <button className="button-app" onClick={weather}>
+        Buscar
+      </button>
 
-      <Show data={data} />
+      {data && (
+        <>
+          <button className="button-app" onClick={openModal}>
+            Abrir modal
+          </button>
+          <Modal isOpen={isModalOpen} closeModal={closeModal}>
+            <Show data={data} />
+          </Modal>
+        </>
+      )}
     </>
   );
 }

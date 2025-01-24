@@ -1,0 +1,79 @@
+.red {
+  color: rgb(148, 2, 2);
+}
+
+.blue {
+  color: rgb(29, 157, 212);
+}
+
+.amarillo {
+  color: rgb(208, 208, 6);
+}
+
+.weather-container {
+  font-family: "Lexend Giga", sans-serif; /* Coincide con el resto del proyecto */
+  max-width: 600px;
+  margin: 0 auto; /* Centramos dentro del modal */
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.95); /* Fondo ligeramente opaco */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Sombras más intensas para resaltar en el modal */
+  text-align: center;
+  color: #22223b; /* Color acorde al tema general */
+}
+
+.container-header {
+  margin-bottom: 1.5rem;
+}
+
+.container-header h1 {
+  font-size: 2.2rem; /* Tamaño ajustado para destacar en el modal */
+  margin-bottom: 0.5rem;
+  color: #22223b; /* Tono oscuro para contraste */
+  font-family: "Ibarra Real Nova", serif; /* Elegante para el título */
+}
+
+.container-header h2 {
+  font-size: 1.1rem;
+  color: #60678e; /* Color secundario */
+  font-weight: 400;
+  margin: 0;
+}
+
+.container-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-body img {
+  max-width: 100px; /* Tamaño moderado */
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.2)); /* Sombra elegante */
+}
+
+.weather-details,
+.wind-details {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: #ffffff; /* Fondo blanco para contraste */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15); /* Sombras más suaves */
+  text-align: left; /* Alineación a la izquierda para contenido */
+}
+
+.weather-details h3,
+.wind-details h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #4a4a4a; /* Tono neutro */
+}
+
+.weather-details p,
+.wind-details p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #333333; /* Texto oscuro */
+  line-height: 1.5;
+}
