@@ -5,7 +5,7 @@ const Show = ({ data }) => {
   const colorTemperature = (num) => {
     if (num <= 20) return "blue";
     if (num > 20 && num <= 30) return "amarillo";
-    return "red"; // num > 30
+    return "red"; 
   };
 
   return (

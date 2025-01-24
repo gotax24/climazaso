@@ -23,7 +23,6 @@ function App() {
         `https://api.weatherstack.com/current?access_key=${API_KEY}&query=${city}`
       )
       .then((response) => {
-        console.log(response.data);
         setData(response.data);
         openModal();
       })
