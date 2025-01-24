@@ -2,10 +2,14 @@ import PropTypes from "prop-types";
 import "../css/Show.css";
 
 const Show = ({ data }) => {
+  if (!data || !data.location || !data.current) {
+    return <p>Información no disponible</p>; // Muestra un mensaje si no hay datos
+  }
+  
   const colorTemperature = (num) => {
     if (num <= 20) return "blue";
     if (num > 20 && num <= 30) return "amarillo";
-    return "red"; 
+    return "red";
   };
 
   return (

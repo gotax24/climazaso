@@ -9,6 +9,7 @@ function App() {
   const [city, setCity] = useState("");
   const [data, setData] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [error, setError] = useState(null);
 
   const API_KEY = import.meta.env.VITE_API_KEY;
 
@@ -23,11 +24,19 @@ function App() {
         `https://api.weatherstack.com/current?access_key=${API_KEY}&query=${city}`
       )
       .then((response) => {
-        setData(response.data);
-        openModal();
+        if (response.data && response.data.location && response.data.current) {
+          setData(response.data);
+          openModal();
+          setError(null); // Resetea errores previos
+        } else {
+          setError("Los datos recibidos de la API no son válidos.");
+          setData(null);
+        }
       })
       .catch((e) => {
+        setError("Error al obtener los datos. Intenta nuevamente.");
         console.error(e);
+        setData(null);
       });
   };
 
@@ -44,6 +53,8 @@ function App() {
       <button className="button-app" onClick={weather}>
         Buscar
       </button>
+
+      {error && <p className="error-message">{error}</p>}
 
       {data && (
         <>
