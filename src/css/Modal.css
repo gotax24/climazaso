@@ -1,15 +1,11 @@
+/* General Modal Styles */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Fondo oscuro más opaco para mayor contraste */
+  background: rgba(0, 0, 0, 0.7); /* Fondo oscuro más opaco */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +37,7 @@
   border: none;
   font-size: 20px;
   font-weight: bold;
-  color: rgb(145, 14, 14); /* Botón de cierre en blanco */
+  color: rgb(145, 14, 14); /* Botón de cierre */
   cursor: pointer;
   transition: transform 0.2s ease;
 }
@@ -62,5 +58,39 @@
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+/* Media Queries */
+
+/* Tablets and Medium Screens */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 20px; /* Reduce el padding para pantallas medianas */
+    max-width: 90%; /* Más ancho relativo */
+    font-size: 0.95rem; /* Texto más pequeño para evitar desbordes */
+  }
+
+  .modal-close {
+    font-size: 18px; /* Botón de cierre ligeramente más pequeño */
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 15px; /* Aún menos padding para pantallas pequeñas */
+    font-size: 0.9rem; /* Reduce ligeramente el tamaño del texto */
+    border-radius: 10px; /* Bordes más pequeños */
+  }
+
+  .modal-close {
+    font-size: 16px; /* Botón de cierre más pequeño */
+  }
+
+  .modal-overlay {
+    padding: 10px; /* Asegura que no quede pegado a los bordes */
   }
 }

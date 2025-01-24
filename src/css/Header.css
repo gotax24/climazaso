@@ -1,39 +1,73 @@
 /* Header */
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem; /* Separación del input */
-  }
-  
-  .header-logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem; /* Espacio entre logo y título */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem; /* Separación del input */
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Espacio entre logo y título */
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Ibarra Real Nova", serif;
+  color: white;
+}
+
+.header-subTitle {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.header-subTitle h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+  color: white;
+}
+
+/* Media Queries for Phones */
+@media (max-width: 768px) {
   .logo {
-    width: 180px;
-    height: auto;
+    width: 140px; /* Reduce el tamaño del logo en tablets y teléfonos grandes */
   }
-  
+
   .title {
-    font-size: 4rem;
-    font-weight: bold;
-    font-family: "Ibarra Real Nova", serif;
-    color: white;
+    font-size: 2.5rem; /* Reduce el tamaño del título */
   }
-  
-  .header-subTitle {
-    text-align: center;
-    margin-top: 0.5rem;
-  }
-  
+
   .header-subTitle h2 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin: 0;
-    color: white;
+    font-size: 1rem; /* Ajusta el subtítulo */
   }
-  
+}
+
+/* Media Queries for Small Phones */
+@media (max-width: 480px) {
+  .logo {
+    width: 100px; /* Logo más pequeño para teléfonos pequeños */
+  }
+
+  .title {
+    font-size: 2rem; /* Aún más pequeño para pantallas menores */
+    text-align: center; /* Asegura que el texto esté centrado */
+  }
+
+  .header-subTitle h2 {
+    font-size: 0.9rem; /* Subtítulo más pequeño */
+  }
+
+  header {
+    margin-bottom: 1.5rem; /* Reduce el margen inferior */
+  }
+}

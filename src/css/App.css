@@ -57,3 +57,38 @@ input::placeholder {
 .button-app:active {
   transform: scale(1);
 }
+
+/* Media Queries for Phones */
+@media (max-width: 768px) {
+  input[type="search"] {
+    width: 90%; /* Reduce el ancho para adaptarse a pantallas pequeñas */
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .button-app {
+    width: 90%; /* Botón ocupa el mismo ancho que el input */
+    font-size: 1rem;
+    height: 45px; /* Reduce un poco la altura */
+  }
+
+  input::placeholder {
+    font-size: 18px; /* Ajusta el tamaño del texto */
+  }
+}
+
+@media (max-width: 480px) {
+  input[type="search"] {
+    font-size: 0.9rem; /* Tamaño del texto más pequeño */
+    padding: 0.6rem;
+  }
+
+  .button-app {
+    font-size: 0.9rem; /* Ajusta el texto del botón */
+    height: 40px; /* Más pequeño para pantallas muy pequeñas */
+  }
+
+  input::placeholder {
+    font-size: 16px; /* Más pequeño en pantallas menores a 480px */
+  }
+}

@@ -77,3 +77,69 @@
   color: #333333; /* Texto oscuro */
   line-height: 1.5;
 }
+
+/* General Responsive Styles */
+
+/* Tablets and Medium Screens */
+@media (max-width: 768px) {
+  .weather-container {
+    max-width: 90%; /* Más ancho relativo en tablets */
+    padding: 15px; /* Reducir padding para pantallas medianas */
+    font-size: 0.95rem; /* Texto ligeramente más pequeño */
+  }
+
+  .container-header h1 {
+    font-size: 1.8rem; /* Reducir el título en tablets */
+  }
+
+  .container-header h2 {
+    font-size: 1rem; /* Ajustar subtítulos */
+  }
+
+  .container-body img {
+    max-width: 80px; /* Reducir tamaño de la imagen */
+    margin-bottom: 1rem;
+  }
+
+  .weather-details,
+  .wind-details {
+    padding: 10px; /* Ajustar padding */
+    font-size: 0.9rem; /* Reducir texto interno */
+  }
+
+  .weather-details h3,
+  .wind-details h3 {
+    font-size: 1.2rem; /* Ajustar tamaño del subtítulo */
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .weather-container {
+    padding: 10px; /* Aún menos padding */
+    border-radius: 8px; /* Bordes más pequeños */
+  }
+
+  .container-header h1 {
+    font-size: 1.5rem; /* Reducir más el tamaño del título */
+  }
+
+  .container-header h2 {
+    font-size: 0.9rem; /* Subtítulos más pequeños */
+  }
+
+  .container-body img {
+    max-width: 60px; /* Imagen más pequeña en móviles */
+  }
+
+  .weather-details,
+  .wind-details {
+    padding: 8px; /* Reducir padding interno */
+    font-size: 0.85rem; /* Texto más compacto */
+  }
+
+  .weather-details h3,
+  .wind-details h3 {
+    font-size: 1rem; /* Reducir encabezados */
+  }
+}
