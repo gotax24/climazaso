@@ -18,18 +18,6 @@ Climazaso es una aplicación que permite buscar y mostrar información del clima
 - **CSS**: Diseño personalizado para la experiencia visual.
 - **WeatherStack API**: Fuente de datos climáticos.
 
-## 🖼️ Capturas de pantalla
-
-### Página principal
-
-> Aquí puedes agregar imágenes del diseño principal.
-
----
-
-### Modal con información del clima
-
-> También puedes agregar una captura del modal mostrando la información.
-
 ## 🧑‍💻 Instalación y configuración
 
 Sigue los pasos a continuación para ejecutar este proyecto en tu entorno local.
