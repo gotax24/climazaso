@@ -1,8 +1,41 @@
-# React + Vite
+# Climazaso 🌤️
+Climazaso es una aplicación que permite buscar y mostrar información del clima actual para cualquier ciudad. Utiliza la API de WeatherStack para obtener datos en tiempo real, como temperatura, humedad, velocidad del viento, y más.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Características
 
-Currently, two official plugins are available:
+- Búsqueda de clima por ciudad.
+- Información detallada del clima:
+  - Temperatura actual y sensación térmica.
+  - Cobertura de nubes, humedad e índice UV.
+  - Velocidad y dirección del viento.
+- Interfaz moderna y responsiva.
+- Uso de modales para mostrar información de manera clara y organizada.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologías utilizadas
+
+- **React**: Librería principal para la construcción de la interfaz.
+- **Axios**: Para manejar las solicitudes HTTP a la API.
+- **CSS**: Diseño personalizado para la experiencia visual.
+- **WeatherStack API**: Fuente de datos climáticos.
+
+## 🖼️ Capturas de pantalla
+
+### Página principal
+
+> Aquí puedes agregar imágenes del diseño principal.
+
+---
+
+### Modal con información del clima
+
+> También puedes agregar una captura del modal mostrando la información.
+
+## 🧑‍💻 Instalación y configuración
+
+Sigue los pasos a continuación para ejecutar este proyecto en tu entorno local.
+
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/tu-usuario/weather-app.git
+   cd weather-app
+   ```
