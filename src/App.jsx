@@ -4,6 +4,7 @@ import axios from "axios";
 import "./css/App.css";
 import Show from "./components/Show";
 import Modal from "./components/Modal";
+import Footer from "./components/Footer"
 
 function App() {
   const [city, setCity] = useState("");
@@ -66,6 +67,7 @@ function App() {
           </Modal>
         </>
       )}
+      <Footer/>
     </>
   );
 }

@@ -1,0 +1,72 @@
+/* Estilos generales del footer */
+footer.credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;  
+  color: #f2f2f2;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Lexend Giga", sans-serif; /* Coincide con el resto del proyecto */
+  font-size: 1rem;
+}
+
+/* Sección de iconos de redes sociales */
+.social-network-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos para los links de redes sociales */
+.link-networks {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Estilo para los iconos de redes */
+.img-footer {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1); /* Iconos blancos */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.link-networks:hover .img-footer {
+  transform: scale(1.2);
+  filter: brightness(0.7); /* Efecto sutil al hover */
+}
+
+/* Sección de copyright */
+.copyright {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6); /* Color más sutil */
+  margin-top: 1.5rem;
+}
+
+/* Hover en general para los links */
+.link-networks:hover {
+  color: #56b6c2;
+}
+
+/* Responsividad para el footer */
+@media (max-width: 768px) {
+  footer.credits {
+    padding: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .social-network-icons {
+    gap: 1rem;
+  }
+
+  .img-footer {
+    width: 28px;
+    height: 28px;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+  }
+}
